@@ -1,5 +1,5 @@
 <h1>Example of complex content projection</h1>
 <button (click)="toggle()">Click me to toggle between header and footer</button>
-<app-stuff-fluff [showBefore]="isLeft$ | async">
+<app-parent-projector [showBefore]="isLeft$ | async">
   <span extra-content>CONTENT</span>
-</app-stuff-fluff>
+</app-parent-projector>
