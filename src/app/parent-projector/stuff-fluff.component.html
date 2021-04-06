@@ -1,7 +1,7 @@
 <ng-template #extracontent>
   <ng-content select="[extra-content]"></ng-content>
 </ng-template>
-<app-stuff-children>
+<app-children-projector>
   <ng-container header *ngIf="showBefore">
     <ng-content *ngTemplateOutlet="extracontent"></ng-content>
   </ng-container>
@@ -9,4 +9,4 @@
   <ng-container footer *ngIf="!showBefore">
     <ng-content *ngTemplateOutlet="extracontent"></ng-content>
   </ng-container>
-</app-stuff-children>
+</app-children-projector>
