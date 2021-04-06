@@ -1,0 +1,12 @@
+<ng-template #extracontent>
+  <ng-content select="[extra-content]"></ng-content>
+</ng-template>
+<app-stuff-children>
+  <ng-container header *ngIf="showBefore">
+    <ng-content *ngTemplateOutlet="extracontent"></ng-content>
+  </ng-container>
+  <span> in the middle of </span>
+  <ng-container footer *ngIf="!showBefore">
+    <ng-content *ngTemplateOutlet="extracontent"></ng-content>
+  </ng-container>
+</app-stuff-children>
