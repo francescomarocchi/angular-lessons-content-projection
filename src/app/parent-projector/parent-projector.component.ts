@@ -5,7 +5,7 @@ import { Component, Input, OnInit } from "@angular/core";
   templateUrl: "./parent-projector.component.html",
   styleUrls: ["./parent-projector.component.css"]
 })
-export class StuffFluffComponent implements OnInit {
+export class ParentProjectorComponent implements OnInit {
   @Input() showBefore = false;
   constructor() {}
 
