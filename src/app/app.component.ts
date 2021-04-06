@@ -10,4 +10,9 @@ export class AppComponent {
   name = "Angular " + VERSION.major;
 
   isLeft$ = new BehaviorSubject(true);
+
+  toggle(): void {
+    const newValue = !this.isLeft$.value;
+    this.isLeft$.next(newValue);
+  }
 }

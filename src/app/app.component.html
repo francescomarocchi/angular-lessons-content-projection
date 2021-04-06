@@ -1,7 +1,5 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
-<app-stuff-fluff [showBefore]="false">
+<h1>Example of complex content projection</h1>
+<button (click)="toggle()">Click me to toggle between header and footer</button>
+<app-stuff-fluff [showBefore]="isLeft$ | async">
   <span extra-content>CONTENT</span>
 </app-stuff-fluff>
